@@ -1,0 +1,1340 @@
+/* <editor-fold defaultstate="collapsed" desc="RESET">*/
+/* RESET */
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; } 
+body{font-size:100%;}
+ul{list-style:none;}
+/* Einde RESET */
+/* </editor-fold>*/
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: SourceSansProSemibold;*/
+    /*src: url("/custompagecontrollers/loginregister/res/fonts/sourcesanspro-semibold.ttf") format('truetype');*/
+}
+
+.closebutton{
+    width:16px;
+    height:16px;
+    position:absolute;
+    background-color:#00A0BC;
+    right:0;
+    color:white;
+    border-radius:5px;
+    line-height: 16px;
+    z-index:20;
+}
+#webcamui {
+    position:absolute;
+    top:30%;
+    left:35%;
+    width:340px;
+    background-image: url("/custompagecontrollers/loginregister/res/img/bg.png"); 
+    text-align:center;
+    border-radius:5px;
+    border: 1px solid #dcdcdc;
+    padding:0;
+    display:none;
+    z-index:100;
+    overflow:visible;
+}
+#webcamui video{
+    width:100%;
+    margin-left:10px;
+    margin-top:10px;
+
+}
+ul#tablinks{
+    display:none;
+}
+
+
+/* popupbox for selecting username on site*/
+#selectName{
+    display:none;
+    position:absolute;
+    top:30%;
+    left:35%;
+    width:20%;
+    background-image: url("/custompagecontrollers/loginregister/res/img/bg.png"); 
+    text-align:center;
+    border-radius:5px;
+    border: 1px solid #dcdcdc;
+    padding-bottom:5%;
+    padding-left:5%;
+    padding-right:5%;
+}
+#selectName label{
+    margin-bottom:3%;
+    display:block;
+}
+#selectName h4{
+    text-align:justify;
+    margin-top:3%;
+    margin-bottom:3%;
+    margin-left:-5%;
+    margin-right:-5%;
+}
+#selectName label:first-child{
+    margin-bottom:5%;
+}
+#selectName button{
+    margin-bottom:3%;
+    border:none;
+    border-radius:5px;
+    color:white;
+    background-color:#00A0BC;
+
+}
+
+
+
+
+
+/*GENERAL*/
+body{
+    background-image: url("/custompagecontrollers/loginregister/res/img/bg.png"); 
+    font-family: SourceSansProSemibold, Arial , Helvetica
+}
+footer{
+    clear:both;
+}
+
+
+#uploadbutton img{
+    max-width:100%;
+}
+/* <editor-fold defaultstate="collapsed" desc="COLORS">*/
+.yellow{
+    background-color:#ffa500;
+}
+.royalblue{
+    background-color: #7aa1c2;
+}
+.facebookbluecircle{
+    background-color: #004e8f;
+}
+.facebookbluelight{
+    background-color: #3c5a98;
+}
+.facebookbluedark{
+    background-color: #324e89;
+}
+.aquamarijn{
+    background-color: #4fb6e2;
+}
+.linkedinblue{
+    background-color: #00a0bc;
+}
+.linkedinblue2{
+    background-color: #18a8c2;
+
+}
+.twitterblue{
+    background-color:#008bcf;
+}
+.purple{
+    background-color: #695375;
+}
+.greyblue{
+    background-color: #c6d6e3;
+}
+.greyorsign{
+    background-color: #eaeaea;
+}
+/* </editor-fold>*/
+
+.error{
+    z-index:100;
+    color:red;
+}
+/*<editor-fold defaultstate="collapsed" desc="CIRCLE POSITIONING">*/
+#backgroundcircles div.circle.xxxs.yellow.star{
+    right:11%;
+    top:2%;
+    background-size:25%;
+}
+#backgroundcircles div.circle.xxl.purple.hifluence{
+    left:44%;
+    top:2%;
+    background-size:55%
+}
+#backgroundcircles div.circle.l.royalblue.android{
+    left:3%;
+    top:4%;
+    background-size:30%;
+}
+#backgroundcircles div.circle.xxs.linkedinblue.linkedin{
+    left:17%;
+    top:4.2%;
+    background-size:40%;
+}
+
+#backgroundcircles>div.circle.l.facebookbluecircle.facebook{
+    right:6.5%;
+    top:6%;
+    background-size:20%;
+}
+#backgroundcircles div.circle.m.purple.hifluence{
+    top:34%;
+    left:7%;
+    background-size:50%;
+}
+#backgroundcircles div.circle.xl.aquamarijn.twitter{
+    top:58%;
+    left:3%;
+    background-size:50%;
+}
+#backgroundcircles div.circle.tussenxsens.linkedinblue2.linkedin{
+    top:79.8%;
+    left:43%;
+    background-size:57%;
+}
+#backgroundcircles div.circle.xxl.purple:not(.hifluence){
+    top:76.4%;
+    left:72.5%;
+}
+#backgroundcircles div.circle.xxxl.aquamarijn.twitter{
+    left:80.5%;
+    top:77%;
+    background-size:45%;
+    z-index:-20;
+}
+#backgroundcircles div.circle.xs.aquamarijn{
+    top:85%;
+    left:2%;
+}
+#backgroundcircles div.circle.m.yellow.star{
+    top:85%;
+    left:22%;
+    background-size:30%;
+}
+#backgroundcircles div.circle.s.greyblue.android{
+    top:90%;
+    left:55%;
+    background-size:30%;
+}
+#backgroundcircles div.circle.s.twitterblue.twitter{
+    top:88%;
+    left:65%;
+    background-size:45%;
+}
+/* </editor-fold>*/
+/* <editor-fold defaultstate="collapsed" desc="CIRCLE STYLING">*/
+
+.circle{
+    border-radius: 50%;
+    position:absolute;
+    z-index:-10;
+}
+/*   <editor-fold defaultstate="collapsed" desc="CIRCLE SIZES">*/
+.xxxs {
+    width: 3%;
+    padding-bottom:3%; 
+}
+.xxs {
+    width:4%;
+    padding-bottom: 4%; 
+}
+.xs {
+    width: 4.5%;
+    padding-bottom: 4.5%; 
+}
+.tussenxsens{
+    width: 6.5%;
+    padding-bottom: 6.5%;
+
+}
+.s{
+    width: 7%;
+    padding-bottom: 7%;
+}
+.m {
+    width: 8%;
+    padding-bottom: 8%; 
+}
+.l{
+    width: 10%;
+    padding-bottom: 10%; 
+}
+.xl{
+    width:11%;
+    padding-bottom: 11%; 
+}
+.xxl{
+    width:12%;
+    padding-bottom:12%;
+}
+.xxxl{
+    width:15%;
+    padding-bottom:15%;
+}
+/* </editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="CIRCLE ICONS">*/
+.hifluence{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/hifluencelogo.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.android{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/android.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.twitter{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/twitter.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.linkedin{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/linkedin.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.star{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/star.png");
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+.facebook{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/fb.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+/* </editor-fold>*/
+
+
+
+
+
+/* </editor-fold>*/
+
+/*USER PROFILE*/ 
+#userprofile{
+    width:96%;
+    padding:2%;
+    margin-top:8px;
+    background:#f5f5f5;
+    border-radius:5px;
+    border:1px solid #dcdcdc;
+    overflow:auto;
+}
+#userprofile #userdata .imgholder{
+    width:100px;
+    height:100px;
+}
+#userprofile #userdata .imgholder img{
+    max-width:100%;
+}
+#userprofile h4{
+    font-size:80%;
+    border-bottom:1px solid #dcdcdc
+}
+#userprofile label{
+    display:block;
+    font-size:80%;
+    color:#676767;
+    margin-left:2%;
+}
+#userprofile input,#userprofile textarea{
+    box-sizing: border-box;
+    display:block;
+    background:#f5f5f5;
+    border-radius:5px;
+    border:1px solid #dcdcdc;
+    width:100%;
+    background:white;
+    clear:both;
+    padding-left:2%;
+}
+#userprofile button{
+    float:right;
+    width:100px;
+    height:35px;
+    border:none;
+    border-radius:5px ;
+    color:white;
+    background-color:#ffa500;
+    font-weight:bold;
+    margin-top:4%;
+    margin-bottom:4%;
+}
+#tags{
+    border-radius:5px;
+    border:1px solid #dcdcdc;
+    background:white;
+    padding:2%;
+    margin:2% 0;
+    clear:both;
+}
+#comments{
+    border-radius:5px;
+    border:1px solid #dcdcdc;
+    background:white;
+    padding:2%;
+    margin:2% 0;
+    clear:both;
+}
+#comments label{
+    border-top:1px solid #dcdcdc;
+    margin-top:5px;
+    font-size:80%;
+
+}
+#comments .text{
+    border-bottom:1px solid #dcdcdc;
+    font-size:70%;
+    margin-bottom:5px;
+}
+#logoutlink{
+    border-radius:5px;
+    color:white;
+    text-decoration:none;
+    background-color:#00A0BC;
+    padding:10px;
+    margin-bottom:10px;
+    font-size:80%;
+    float:right;
+    margin-right:-1px
+}
+#webcamsnapper{
+    border-radius:5px;
+    color:white;
+    background-color:#00A0BC;
+    padding:10px;
+    margin-bottom:10px;
+    font-size:80%;
+    border:none;
+    cursor:pointer;
+}
+
+@media screen and (max-width:425px){
+    /* <editor-fold defaultstate="collapsed" desc="GENERAL STRUCTURE">*/
+    .container{
+        width:80%;
+        margin:0 auto;
+        height:100%;
+    }
+
+    div#content{
+        /*margin-top:5%;;*/
+        border-bottom: 1px solid #dcdcdc;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin-top:50px;
+    }
+    div#content h1{
+        display:none;}
+    /* </editor-fold>*/
+    /* <editor-fold defaultstate="collapsed" desc="TABS">*/
+    ul#tablinks{
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        width:100%;
+        height:8%;
+        display:block;
+        background:#81afc5;
+        overflow:auto;
+        border-right: 1px solid #81afc5; 
+        border-left: 1px solid #81afc5; 
+    }
+    ul#tablinks li{
+        display:inline-block;
+        width:45%;
+        border:none;
+        border-radius:5px;
+        text-align:center;
+        letter-spacing: 2px;
+        font-size:150%;
+        font-weight:bold;
+        /*height:50%;*/
+        margin-top:4%;
+        margin-bottom:4%;
+    }
+    ul#tablinks li:first-child{
+        margin-left:2.5%;
+        float:left;
+    }
+    ul#tablinks li:last-child{
+        margin-right:2.5%;
+        float:right;
+    }
+    ul#tablinks li.ui-tabs-active{
+    }
+    ul#tablinks li.ui-tabs-active a{
+        font-weight:bolder;
+    }
+    ul#tablinks li a{
+        box-sizing: border-box;
+        display:inline-block;
+        width:100%;
+        padding-top:10%;
+        padding-bottom:10%;
+        text-decoration: none; 
+        color:white;
+        border-radius:5px;
+        font-size:50%;
+        z-index:20;
+    }
+    /* </editor-fold>*/
+    div#registerlogincontainer{
+        width:90%;
+        padding-left:5%;
+        padding-right:5%;
+        margin:auto;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top:none;
+        background:#f5f5f5;
+        /*opacity:0.85;*/
+        overflow:auto;
+        height:300px;
+        border-right: 1px solid #dcdcdc; 
+        border-left: 1px solid #dcdcdc; 
+    }
+
+    /* <editor-fold defaultstate="collapsed" desc="loginForm">*/
+    div#loginformcontainer,  div#registerformcontainer{
+        box-sizing: border-box;
+        width:100%;
+        margin-top:7.5%;
+    }
+
+    /*hide separator*/
+    div#separator{
+        display:none;
+    }
+
+    /* <editor-fold defaultstate="collapsed" desc="FBBUTTON">*/
+    div#loginformcontainer>button.fblogin{
+        box-sizing: border-box;
+        width:82%;
+        margin-left:9%;
+        margin-top:5%;
+        margin-bottom:10%;
+        height:8%;
+        border:none;
+        border-radius:5px;
+        padding:0;
+        cursor:pointer;
+        color:white;
+    }
+    div#loginformcontainer button.fblogin .fblogo{
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;
+        height:100%;
+        width:10%;
+        display:inline-block;
+        padding-left:5%;
+        padding-right:5%;
+        margin-left:-1.5%;
+        vertical-align: middle;
+        float:left;
+    }
+    div#loginformcontainer button.fblogin .fblogintext{
+        display: inline-block;
+        width:80%;
+        height:50%;
+        text-align:center;
+        vertical-align: middle;
+        font-size:80%;
+        margin-top:4%;
+        margin-bottom:4%;
+    }
+    div#loginformcontainer button.fblogin .fblogintext em{
+        font-weight:bolder;
+        font-style: normal;
+        font-size:120%;
+    }
+    /* </editor-fold>*/
+
+    div#loginseparator{
+        position:relative;
+        height:2px;
+        width:82%;
+        margin: 0 auto;
+        background: #f5f5f5; /* Old browsers */
+        background: -moz-linear-gradient(left,  #f5f5f5 0%, #dcdcdc 25%, #dcdcdc 75%, #f5f5f5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f5f5), color-stop(25%,#dcdcdc), color-stop(75%,#dcdcdc), color-stop(100%,#f5f5f5));  /*Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* IE10+ */
+        background: linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 */
+    }
+    #loginseparator .circle{
+        position:relative;
+        top:-10px;
+        margin:auto;
+        z-index:0;
+        color:#bbbbbb;
+        width:19px;
+        height:19px;
+        border:1px solid #bbbbbb;
+        text-align: center;
+        line-height: 19px;
+    }
+    div#loginseparator+form{
+        margin-top:10%;
+    }
+    /*general input styling*/
+    div#loginformcontainer input:not([type=checkbox]),div#registerformcontainer input{
+        box-sizing: border-box;
+        border-radius:5px;
+        border:1px solid #dcdcdc; 
+        width: 100%;
+        margin-bottom: 7%;
+        padding-bottom: 4.5%;
+        padding-left: 13%;
+        padding-top: 4.5%;
+        font-size: 80%;
+        font-weight: bold;
+        color:#dcdcdc; 
+    }
+    /*<editor-fold defaultstate="collapsed" desc="CHECKBOX">*/
+    div#loginformcontainer #fakecheckbox{
+        width:15px;
+        height:15px;
+        display:inline-block;
+        border-radius:5px;
+        border:1px solid #dcdcdc;
+        background:#e1e1e1;
+        float:left;
+        margin-top:3%;
+        margin-left:20%
+    }
+    div#loginformcontainer #fakecheckbox.checked:before {
+        position:relative;
+        left:15%;
+        bottom:20%;
+        content:  "\2713 ";
+        color:#bbbbbb;
+    }
+    div#loginformcontainer #fakecheckbox+label{
+        display:inline-block;
+        margin-top:3.5%;
+        margin-left:1.5%;
+        float:left;
+        color:#cbcbcb;
+        font-size:65%;
+        height:15px;
+    }
+    /*</editor-fold>*/
+    div#loginformcontainer>form>button[name=submit]{
+        margin-top:7.5%;
+        background-color:#00A0BC;
+        letter-spacing:1px;
+        font-weight:bold;
+        font-size:90%;
+        cursor:pointer;
+
+
+
+        border:none;
+        border-radius:5px ;
+        color:white;
+        float:right;
+        font-weight:bold;
+        width:100px;
+        height:35px;
+
+    }
+
+
+    /*jquery validation messages*/
+    div#loginformcontainer>input+label.error{
+        font-size:75%;
+        display:block;
+        margin-top:-11%;
+        height:5%;
+        z-index: -1000;
+    }
+
+    /* </editor-fold>*/
+
+    /*<editor-fold defaultstate="collapsed" desc="registerform">*/
+    /*    div#registerformcontainer{
+            display:block;
+        }*/
+    div#registerformcontainer {
+        width:100%;
+        overflow:visible;
+    }
+    div#registerformcontainer h4{
+        display:none;
+    }
+    div#registerformcontainer form label:first-child{
+        width:70%;
+        float:left;
+        cursor :pointer;
+
+    }
+    div#registerformcontainer form label:nth-of-type(2){
+        clear:both;
+    }
+
+    div#registerformcontainer input[type=file]{
+        width:50px;
+        height:50px;
+        margin-top:0px;
+        float:right;
+        margin-right:-50px;
+        z-index:50;
+        position:relative;
+        opacity:0;
+    }
+    div#registerformcontainer #uploadbutton{
+        float:right;
+        width:50px;
+        height:50px;
+        border:1px solid #dcdcdc; 
+        border-radius: 6px;
+        background: white;
+        text-align: center;
+        position:relative;
+    }
+    div#registerformcontainer #uploadbutton .imgholder{
+        width:30%;
+        margin:45% auto auto auto;
+    }
+    div#registerformcontainer #uploadbutton .imgholder img{
+        max-width:100%;
+    }
+    div#registerformcontainer #uploadbutton:hover{
+        cursor:pointer;
+    }
+    div#registerformcontainer label{
+        display:block;
+        margin-bottom:3%;;
+        margin-left:1.5%;
+        font-size: 80%;
+        color:#676767;
+    }
+
+    div#registerformcontainer input[type=text],div#registerformcontainer input[type=email],div#registerformcontainer input[type=password]{
+        font-size: 80%;
+        font-weight: bold;
+        margin-bottom:1%;
+        padding-bottom: 2.5%;
+        padding-left: 13%;
+        padding-top: 2.5%;
+        width: 100%;
+        height:5%;
+        color:black;
+    }
+    div#registerformcontainer button[name=submit]{
+        float:right;
+        width:100px;
+        height:35px;
+        border:none;
+        border-radius:5px ;
+        color:white;
+        background-color:#ffa500;
+        font-weight:bold;
+        margin-top:4%;
+    }
+
+
+    /*Jquery validation*/
+
+
+
+
+    input+label.error{
+        display:block;
+        margin-top:-11%;
+        height:5%;
+        z-index: -1000;
+    }
+
+    /*</editor-fold>*/
+    div#backgroundcircles{
+        width:100%;
+        margin-left:-10%;
+        max-width:766px;
+        z-index:-10;
+        height:500px;
+        position:absolute;
+        margin-top:-17%;
+    }
+    /*<editor-fold defaultstate="collapsed" desc="CIRCLE POSITIONING">*/
+
+
+
+
+
+    #backgroundcircles div.circle.xxxs.yellow.star{
+        right:11%;
+        top:2%;
+        background-size:25%;
+    }
+    #backgroundcircles div.circle.xxl.purple.hifluence{
+        left:44%;
+        top:2%;
+        background-size:55%
+    }
+    #backgroundcircles div.circle.l.royalblue.android{
+        left:3%;
+        top:4%;
+        background-size:30%;
+    }
+    #backgroundcircles div.circle.xxs.linkedinblue.linkedin{
+        left:17%;
+        top:4.2%;
+        background-size:40%;
+    }
+
+    #backgroundcircles>div.circle.l.facebookbluecircle.facebook{
+        right:6.5%;
+        top:6%;
+        background-size:20%;
+    }
+    #backgroundcircles div.circle.m.purple.hifluence{
+        top:34%;
+        left:7%;
+        background-size:50%;
+    }
+    #backgroundcircles div.circle.xl.aquamarijn.twitter{
+        top:58%;
+        left:3%;
+        background-size:50%;
+    }
+    #backgroundcircles div.circle.tussenxsens.linkedinblue2.linkedin{
+        top:79.8%;
+        left:43%;
+        background-size:57%;
+    }
+    #backgroundcircles div.circle.xxl.purple:not(.hifluence){
+        top:76.4%;
+        left:72.5%;
+    }
+    #backgroundcircles div.circle.xxxl.aquamarijn.twitter{
+        left:80.5%;
+        top:77%;
+        background-size:45%;
+        z-index:-20;
+    }
+    #backgroundcircles div.circle.xs.aquamarijn{
+        top:85%;
+        left:2%;
+    }
+    #backgroundcircles div.circle.m.yellow.star{
+        top:85%;
+        left:22%;
+        background-size:30%;
+    }
+    #backgroundcircles div.circle.s.greyblue.android{
+        top:90%;
+        left:55%;
+        background-size:30%;
+    }
+    #backgroundcircles div.circle.s.twitterblue.twitter{
+        top:88%;
+        left:65%;
+        background-size:45%;
+    }
+    /* </editor-fold>*/
+
+}
+@media screen and (min-width:321px) and (max-width:375px){
+    div#loginformcontainer button.fblogin>div.fblogintext{
+        margin-top:3.5%;
+        margin-bottom:3.5%;
+    }
+}
+@media screen and (min-width:375px) and (max-width:425px){
+    div#backgroundcircles{ 
+        /*500px*/
+        height:583px;
+
+    }
+    div#registerlogincontainer{
+        /*300px*/
+        height:350px;
+    }
+    div#loginformcontainer button.fblogin>div.fblogintext{
+        margin-top:3.5%;
+        margin-bottom:3.5%;
+    }
+}
+@media screen and (min-width:426px) {
+    .container{
+        margin:auto;
+        width:85%;
+        max-width:900px;
+    }
+    div#content{
+        margin:14.8% auto;
+        width:74%;
+    }
+    div#backgroundcircles{
+        max-width:900px;
+        width:95%;
+        margin:auto;
+        height:750px;
+        position:relative;
+        /*top:-17%;*/
+    }
+    /* <editor-fold defaultstate="collapsed" desc="CONTENTCONTAINER">*/
+    div#content{
+        position:relative;
+
+    }
+    div#content>h1{
+        margin-top:-755px;
+        padding-bottom:5%;
+        width:100%;
+        height:25%;
+        max-height:70px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-left:1px solid #81afc5;
+        border-right:1px solid #81afc5;
+        background:#81afc5;
+        color:white;
+        text-align:center;
+        font-weight:bolder;
+        font-size:150%;
+        letter-spacing: 1px;
+    }
+    div#content>h1>div.imgholder{
+        float:left;
+        width:16%;
+        height:100%;
+        position:relative;
+        display:inline;
+        margin:0;
+        padding:0
+    }
+    div#content>h1>div.imgholder>img{
+        width:30%;
+        margin-top:33%;
+    }
+    div#content>h1>div.headertext{
+        display:inline-block;
+        width:83%;
+        margin-top:5.2%;
+        text-align:left;
+    }
+
+    /* </editor-fold>*/
+    #registerlogincontainer{
+        width:100%;
+        height:100%;
+        /*overflow:hidden;*/
+        padding-top:2%;
+        border-left: 1px solid #dcdcdc;
+        border-right: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background:#f5f5f5;
+        position:relative;
+        height:450px;
+
+    }
+    /* <editor-fold defaultstate="collapsed" desc="LOGINFORM GENERAL STYLING">*/  
+    div#loginformcontainer{
+        text-align:center;
+        height:100%;
+        width:42%;
+        margin-left:3.5%;
+        float:left;
+    }
+    div#loginformcontainer>button.fblogin{
+        box-sizing: border-box;
+        width:82%;
+        height:10.5%;
+        border:none;
+        border-radius:5px;
+        margin-top:10%;
+        padding:0;
+        cursor:pointer;
+    }
+    div#loginformcontainer button.fblogin>div.fblogo{
+        width:20%;
+        height:100%;
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;
+        display:inline-block;
+        float:left;
+    }
+    div#loginformcontainer button.fblogin>div.fblogo>img{
+        height:50%;
+        width:22%;
+        top:25%;
+        position:relative;
+    }
+    div#loginformcontainer button.fblogin>div.fblogintext{
+        display: inline-block;
+        width:80%;
+        float:right;
+        padding-top:2%;
+        height:100%;
+        color:white;
+        font-size:100%;
+        font-weight:lighter;
+    }
+    div#loginformcontainer button.fblogin>div.fblogintext em{
+        font-weight:bold;
+        font-style: normal;
+        font-size:130%;
+    }
+    #loginseparator{
+        height:2px;
+        width:98%;
+        /*margin: 40px auto 40px auto;*/
+        margin: 17% auto;
+        text-align:center;
+        background: #f5f5f5; /* Old browsers */
+        background: -moz-linear-gradient(left,  #f5f5f5 0%, #dcdcdc 25%, #dcdcdc 75%, #f5f5f5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f5f5), color-stop(25%,#dcdcdc), color-stop(75%,#dcdcdc), color-stop(100%,#f5f5f5));  /*Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* IE10+ */
+        background: linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 */
+    }
+    div.greyorsign{
+        position:relative;
+        top:-15.5px;
+        margin:auto;
+        z-index:0;
+        color:#bbbbbb;
+        width:32px;
+        height:32px;
+        line-height:31px;
+    }
+    div#loginformcontainer>form{
+        height:100%;
+        width:100%;
+        position:relative;
+    }
+
+    /*dit naar class?*/
+    div#loginformcontainer input,div#registerformcontainer input{
+        border:1px solid #dcdcdc; 
+        border-radius: 6px;
+        display:block;
+        color:#cbcbcb;
+    }
+    div#loginformcontainer>form>input{
+        box-sizing: border-box;
+        width:100%;
+        margin-bottom:7%;
+        padding-left:13%;
+        padding-top:4.5%;
+        padding-bottom:4.5%;
+        font-size:100%;
+        font-weight:bold;
+    }
+    div#loginformcontainer input[type=checkbox]{
+        display:none;
+        font-weight:normal;
+    }
+    /*<editor-fold defaultstate="collapsed" desc="CHECKBOX">*/
+    div#loginformcontainer #fakecheckbox{
+        display:inline-block;
+        border-radius:5px;
+        border:1px solid #dcdcdc;
+        background:#e1e1e1;
+        float:left;
+        width:6%;
+        padding-bottom:6%;
+        margin-top:8%;
+    }
+    div#loginformcontainer #fakecheckbox.checked {
+    }
+    div#loginformcontainer #fakecheckbox.checked::before {
+        display:inline-block;
+        content:  "\2713 ";
+        color:#bbbbbb;
+        position: absolute;
+        left:1%;
+        height:100%;
+    }
+    div#loginformcontainer #fakecheckbox+label{
+        display:inline-block;
+        margin-top:8.5%;
+        margin-left:1.5%;
+        float:left;
+        color:#cbcbcb;
+        font-size:65%;
+        width:47%;
+        overflow:hidden;
+    }
+    /*</editor-fold>*/
+    div#loginformcontainer>form>button[name=submit]{
+        /*        position:absolute;
+                bottom:51%;
+                right:0;*/
+        float:right;
+        margin-top:2px;
+        width:40%;
+        height:10%;
+        border:none;
+        border-radius:5px;
+        background-color:#00A0BC;
+        color:white;
+        letter-spacing:1px;
+        font-weight:bold;
+        font-size:90%;
+        cursor:pointer;
+    }
+
+    /* </editor-fold>*/
+    /*<editor-fold defaultstate="collapsed" desc="REGISTERFORM GENERAL STYLING">*/
+    div#registerformcontainer{
+        height:100%;
+        width:42%;
+        margin-right:3.5%;
+        float:right;
+        color:#676767;
+    }
+
+    div#registerformcontainer label{
+        font-size:75%;
+        display:block;
+        color:#676767;
+        margin-bottom:5.8%;
+        clear:both;
+    }
+    div#registerformcontainer h4{
+        margin-left:-1%;
+        font-size:80%;
+        float:left;
+    }
+    div#registerformcontainer form label:first-child{
+        margin-top:-7%;;
+        margin-left:35%;
+        float:left;
+    }
+
+    div#registerformcontainer form label:nth-of-type(2){
+        margin-top:-30px;
+        float:left;
+    }
+
+
+    div#registerformcontainer>form{
+        height:100%;
+        position:relative;
+    }
+
+    div#registerformcontainer input[type=text],div#registerformcontainer input[type=email],div#registerformcontainer input[type=password]{
+        box-sizing: border-box;
+        width:100%;
+        margin-bottom:2%;
+        padding-left: 13%;
+        padding-top:3.5%;
+        padding-bottom:3.5%;
+        float:left;
+
+    }
+    div#registerformcontainer>form>button[name=submit]{
+        /*        position:absolute;
+                top:85.8%;
+                right:0;*/
+        float:right;
+        margin-top:15px;
+        width:40%;
+        height:10%;
+        border:none;
+        border-radius:5px;
+        background:#ffa500;
+        color:white;
+        letter-spacing:1px;
+        font-weight:bold;
+        font-size:90%;
+        cursor:pointer;
+    }
+    div#registerformcontainer input[type=file]{
+        cursor:pointer;
+        display:block;
+        width:50px;
+        height:50px;
+        border:none;
+        top:-4.6%;
+        float:right;
+        margin-right:-50px;
+        z-index:50;
+        position:relative;
+        opacity:0;
+    }
+    div#registerformcontainer #uploadbutton{
+        float:right;
+        width:20%;
+        height:15%;
+        top:-5%;
+        border:1px solid #dcdcdc; 
+        border-radius: 6px;
+        background: white;
+        text-align: center;
+        cursor:pointer;
+        margin-bottom:5%;
+    }
+    div#registerformcontainer #uploadbutton .imgholder{
+        margin:40% auto auto auto;
+    }
+    div#registerformcontainer #uploadbutton .imgholder img{
+        width:35%;
+    }
+    div#registerformcontainer #uploadbutton:hover{
+        cursor:pointer;
+    }
+
+
+
+    div#registerformcontainer #uploadbutton{
+        float:right;
+        width:50px;
+        height:50px;
+        border:1px solid #dcdcdc; 
+        border-radius: 6px;
+        background: white;
+        text-align: center;
+        position:relative;
+        overflow: hidden;
+    }
+
+    div#registerformcontainer #uploadbutton:hover{
+        cursor:pointer;
+    }
+
+
+    /*Jquery validation*/
+
+
+
+
+    input+label.error{
+        display:block;
+        margin-top:-11%;
+        height:5%;
+        z-index: -1000;
+    }
+
+    /*</editor-fold>*/
+
+
+    /* </editor-fold>*/
+
+
+
+
+
+    div#separator{
+        float:left;
+        /*width:0.5%;*/
+        width:1px;
+        display:inline-block;
+        height:80%;
+        margin:5% 4.25%;
+        /*Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,dcdcdc+50,dcdcdc+51,f5f5f5+100*/ 
+        background: #f5f5f5;  /*Old browsers */
+        background: -moz-linear-gradient(top, #f5f5f5 0%, #dcdcdc 50%, #dcdcdc 51%, #f5f5f5 100%);  /*FF3.6-15 */
+        background: -webkit-linear-gradient(top, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+    }
+
+
+    #backgroundcircles>div.circle.l.facebookbluecircle.facebook{
+        right:6.5%;
+        top:6.5%;
+        background-size:15%;
+    }
+
+}
+@media screen and (min-width:1024px) {
+    div#registerformcontainer form label:first-child{
+        margin-top:-5%;
+    }
+    div#loginformcontainer button.fblogin>div.fblogintext{
+        padding-top:4%;
+    }
+    div#registerformcontainer input[type=file]{
+        width:75px;
+        height:75px;
+        margin-right:-75px;
+        margin-top:10px;
+    }
+    div#registerformcontainer #uploadbutton{
+        margin-top:10px;
+        width:75px;
+        height:75px;
+    }
+    div#loginformcontainer>form>button[name=submit]{
+        margin-top:16px;
+    }
+    #backgroundcircles>div.circle.l.facebookbluecircle.facebook{
+        right:6.5%;
+        top:9%;
+        background-size:15%;
+    }
+    #backgroundcircles div.circle.m.purple.hifluence{
+        top:44%;
+    }
+    #backgroundcircles div.circle.xl.aquamarijn.twitter{
+        top:68%;
+    }
+    #backgroundcircles div.circle.tussenxsens.linkedinblue2.linkedin{
+        top:87.8%;
+    }
+    #backgroundcircles div.circle.xxl.purple:not(.hifluence){
+        top:83.4%;
+    }
+    #backgroundcircles div.circle.xxxl.aquamarijn.twitter{
+        top:84%;
+    }
+    #backgroundcircles div.circle.xs.aquamarijn{
+        top:91%;
+    }
+    #backgroundcircles div.circle.m.yellow.star{
+        top:96%;
+    }
+    #backgroundcircles div.circle.s.greyblue.android{
+        top:96%;
+    }
+    #backgroundcircles div.circle.s.twitterblue.twitter{
+        top:94%;
+    }
+}
+
+
+div#registerformcontainer input[type=file]{
+    /*opacity:1;*/
+    cursor:pointer}
+
+
+
+/*jQuery validation error message styling*/
+div#loginformcontainer>form>input+label.error,div#registerformcontainer>form>input+label.error{
+    display:block;
+    /*margin-top:-11%;*/
+
+    height:5%;
+    margin:0;
+    padding:0;
+    z-index: -1000;
+    color:red;
+
+}
+div#loginformcontainer>form>input+label.error{
+    font-size:80%
+}
+
+ul.ui-autocomplete{
+    background:white;
+    color:#dcdcdc;
+    border:none;
+    border-radius:5px;
+    width:100%
+}
+ul.ui-autocomplete li:hover{
+    color:black;
+    font-weight:bold;
+    background:white;
+}

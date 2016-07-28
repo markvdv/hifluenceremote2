@@ -1,0 +1,32 @@
+#Options -MultiViews
+#Options +FollowSymLinks
+#
+#RewriteEngine On
+#RewriteBase /
+# not rewrite css, js and images
+#RewriteCond %{REQUEST_URI} !\.(?:css|js|jpe?g|gif|png)$ [NC]
+#RewriteCond %{REQUEST_URI} !\.(css|js|jpeg|gif|png)$ [NC,L]
+#RewriteCond %{REQUEST_URI} !/favicon.ico
+#RewriteCond %{REQUEST_URI} !/robots.txt
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-l
+##rewrite everything to index.php
+#RewriteRule ^([^/]*)(?:/([^/]+)(?:/([^/]+))?)?/?$ index.php [L]
+#rewriteRule ^(.*)$ index.php [L]
+
+
+
+
+Options -MultiViews
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^.*\.(jpg|css|js|gif|png|ttf)$ [NC]
+#rewrite everything to index.php
+RewriteRule ^([^/]*)(?:/([^/]+)(?:/([^/]+))?)?/?$ index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^.*\.(jpg|css|js|gif|png|ttf)$ [NC]
+RewriteRule ^(.*)$ index.php [L]

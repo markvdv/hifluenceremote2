@@ -1,0 +1,1 @@
+<img src="<?php echo $this->image->getBaseFilePath()."/".$this->image->getBaseFileName(); ?>" alt="<?php echo $this->image->getBaseFileName();?>">

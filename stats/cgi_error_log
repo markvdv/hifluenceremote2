@@ -1,0 +1,281 @@
+20160726T043640: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T043703: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T043857: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T044044: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T044209: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T103227: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T103400: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T103410: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T103602: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T103635: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T103841: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T103951: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T104142: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T104218: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T104232: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T104239: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/config/site/dao/siteconfigdao.php(28): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT defaultu...')
+#2 /hermes/bosnaweb16a/b2626/
+20160726T104352: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T104441: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T104634: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T104659: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T104705: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T105200: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T105342: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T105618: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T105718: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T110011: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T110059: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T110108: markvanderveken.com/index.php
+PHP Warning:  session_start(): open(/var/php_sessions/sess_ec8501ee0ba95dccb16ebcd7853bb257, O_RDWR) failed: No such file or directory (2) in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/controller/basecontroller.php on line 31
+PHP Warning:  Unknown: open(/var/php_sessions/sess_ec8501ee0ba95dccb16ebcd7853bb257, O_RDWR) failed: No such file or directory (2) in Unknown on line 0
+PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_pa
+20160726T110359: markvanderveken.com/index.php
+PHP Warning:  session_start(): open(/var/php_sessions/sess_ec8501ee0ba95dccb16ebcd7853bb257, O_RDWR) failed: No such file or directory (2) in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/controller/basecontroller.php on line 31
+PHP Warning:  Unknown: open(/var/php_sessions/sess_ec8501ee0ba95dccb16ebcd7853bb257, O_RDWR) failed: No such file or directory (2) in Unknown on line 0
+PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_pa
+20160726T110412: markvanderveken.com/index.php
+PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/controller/basecontroller.php on line 21
+
+20160726T110526: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(19): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T110637: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T110812: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Permission denied' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /hermes/bosnaw
+20160726T110834: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=mark...', 'mvdv', 'Copernicus1', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /h
+20160726T110935: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=mark...', 'mvdv', 'Copernicus1', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /h
+20160726T111029: markvanderveken.com/index.php
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php(23): PDO->__construct('mysql:host=mark...', 'mvdv', 'Copernicus1', Array)
+#1 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/security/dao/iploggerdao.php(18): MVDV\Core\DAO\DAO::execPreppedStmt('SELECT * FROM l...', Array)
+#2 /h
+20160726T111259: markvanderveken.com/index.php
+PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php on line 23
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao
+20160726T111415: markvanderveken.com/index.php
+PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php on line 23
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao
+20160726T111517: markvanderveken.com/index.php
+PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php on line 23
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao
+20160726T111815: markvandervekencom.ipage.com/index.php
+PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php on line 23
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao
+20160726T111815: markvandervekencom.ipage.com/index.php
+PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php on line 23
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:23
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao
+20160726T142214: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T230733: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T231255: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T231639: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T231647: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T231707: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T231732: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T233814: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T234438: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method User\DAO\UserDAO::create() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/user/service/userservice.php on line 44
+PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'markvanderveken@gmail.com' for key 'useremail'' in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/mvdv/core/dao/dao.php:26
+Stack trace:
+#0 /hermes/bosnaweb16a/b2626/ipg.markvanderve
+20160726T235503: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method User\DAO\UserDAO::create() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/user/service/userservice.php on line 44
+
+20160726T235519: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T235526: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T235538: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+
+20160726T235645: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method User\DAO\UserDAO::create() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/user/service/userservice.php on line 44
+
+20160726T235718: markvanderveken.com/index.php
+PHP Strict Standards:  Non-static method Custompagecontrollers\Loginregister\DAO\LoginDAO::getUsersByName() should not be called statically in /hermes/bosnaweb16a/b2626/ipg.markvandervekencom/custompagecontrollers/loginregister/service/userservice.php on line 30
+

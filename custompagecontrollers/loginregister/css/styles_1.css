@@ -1,0 +1,1325 @@
+/* <editor-fold defaultstate="collapsed" desc="RESET">*/
+/* RESET */
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; } 
+body{font-size:100%;}
+ul{list-style:none;}
+/* Einde RESET */
+/* </editor-fold>*/
+/* <editor-fold defaultstate="collapsed" desc="STYLING APPLICABLE TO ALL MEDIA">*/
+@font-face {
+    font-family: SourceSansProSemibold;
+    src: url(/custompagecontrollers/loginregister/res/fonts/sourcesanspro-semibold.ttf);
+}
+/* <editor-fold defaultstate="collapsed" desc="GENERAL STRUCTURAL ELEMENTS">*/
+body{
+    background-image: url("/custompagecontrollers/loginregister/res/img/bg.png"); 
+    font-family: SourceSansProSemibold
+}
+.container{
+    /*    min-width:600px;
+        max-width:900px;
+        width:60%;*/
+    margin:0 auto;
+}
+footer{
+    clear:both;
+}
+button{
+    border:none;
+    border-radius:6px;
+    width:100px;
+    height:35px;
+}
+
+
+
+/* </editor-fold>*/
+
+/* <editor-fold defaultstate="collapsed" desc="CONTENTCONTAINER">*/
+#content{
+    position:relative;
+}
+div#content>h1,#content #tablinks{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left:1px solid #81afc5;
+    border-right:1px solid #81afc5;
+    text-align:center;
+    color:white;
+    letter-spacing: 1px;
+    background:#81afc5;
+}
+/*    background-image:url("/custompagecontrollers/loginregister/res/img/icons/compose.png");
+    background-repeat: no-repeat;*/
+div#content>h1{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left:1px solid #81afc5;
+    border-right:1px solid #81afc5;
+    text-align:center;
+    color:white;
+    background:#81afc5;
+    background-image:url("/custompagecontrollers/loginregister/res/img/icons/compose.png");
+    background-repeat: no-repeat;
+}
+div#content>h1>div.imgholder{
+    width:5%;
+    height:5%;
+    margin-top:3%;
+}
+div#content>h1>div.headertext{
+    width:80%;
+    margin-left:10%;
+}
+
+/* </editor-fold>*/
+#registerlogincontainer{
+    width:100%;
+    overflow:hidden;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background:#f5f5f5;
+}
+/* <editor-fold defaultstate="collapsed" desc="LOGINFORM GENERAL STYLING">*/  
+#loginformcontainer{
+    text-align:center;
+}
+#loginformcontainer input,#registerformcontainer input{
+    border:1px solid #dcdcdc; 
+    border-radius: 6px;
+    display:block;
+    color:#cbcbcb;
+
+}
+
+#loginseparator{
+    text-align:center;
+    background: #f5f5f5; /* Old browsers */
+    background: -moz-linear-gradient(left,  #f5f5f5 0%, #dcdcdc 25%, #dcdcdc 75%, #f5f5f5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f5f5), color-stop(25%,#dcdcdc), color-stop(75%,#dcdcdc), color-stop(100%,#f5f5f5));  /*Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* IE10+ */
+    background: linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 */
+}
+#loginformcontainer input[type=checkbox]{
+    display:none;
+}
+/*<editor-fold defaultstate="collapsed" desc="CHECKBOX">*/
+#loginformcontainer #fakecheckbox{
+    display:inline-block;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    background:#e1e1e1;
+    float:left;
+}
+#loginformcontainer #fakecheckbox.checked:before {
+    content:  "\2713 ";
+    color:#bbbbbb;
+}
+#loginformcontainer #fakecheckbox+label{
+    display:inline-block;
+    float:left;
+    color:#cbcbcb;
+}
+/*</editor-fold>*/
+#loginformcontainer button[name=submit]{
+    float:right;
+    font-weight:bold;
+    background-color:#00A0BC;
+    color:white;
+}
+/* </editor-fold>*/
+/*<editor-fold defaultstate="collapsed" desc="REGISTERFORM GENERAL STYLING">*/
+#registerformcontainer h4{
+    color:#676767;
+}
+#registerformcontainer input[type=file]{
+    border:none;
+    float:right;
+    z-index:50;
+    position:relative;
+    /*opacity:0;*/
+}
+#registerformcontainer label{
+    display:block;
+    color:#676767;
+    clear:both;
+
+}
+#registerformcontainer button{
+    color:white;
+    background-color:orange;
+    float:right;
+    font-weight:bold;
+}
+#registerformcontainer #uploadbutton{
+    float:right;
+    border:1px solid #dcdcdc; 
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+    position:relative;
+}
+#registerformcontainer #uploadbutton:hover{
+    cursor:pointer;
+}
+
+/*</editor-fold>*/
+/* <editor-fold defaultstate="collapsed" desc="CIRCLE STYLING">*/
+#backgroundcircles{
+    position:relative;
+    margin:0 auto;
+    z-index:-10;
+}
+.circle{
+    border-radius: 50%;
+    position:absolute;
+    z-index:-10;
+}
+/*   <editor-fold defaultstate="collapsed" desc="CIRCLE SIZES">*/
+.xxxs {
+    width: 3%;
+    padding-bottom:3%; 
+}
+.xxs {
+    width:4%;
+    padding-bottom: 4%; 
+}
+.xs {
+    width: 4.5%;
+    padding-bottom: 4.5%; 
+}
+.tussenxsens{
+    width: 6.5%;
+    padding-bottom: 6.5%;
+
+}
+.s{
+    width: 7%;
+    padding-bottom: 7%;
+}
+.m {
+    width: 8.5%;
+    padding-bottom: 8.5%; 
+}
+.l{
+    width: 10%;
+    padding-bottom: 10%; 
+}
+.xl{
+    width:11%;
+    padding-bottom: 11%; 
+}
+.xxl{
+    width:12%;
+    padding-bottom:12%;
+}
+.xxxl{
+    width:15%;
+    padding-bottom:15%;
+}
+/* </editor-fold>*/
+/*<editor-fold defaultstate="collapsed" desc="CIRCLE POSITIONING">*/
+#backgroundcircles div.circle.xxxs.yellow.star{
+    right:11%;
+    background-size:25%;
+}
+#backgroundcircles div.circle.xxl.purple.hifluence{
+    left:44%;
+    background-size:58%
+}
+#backgroundcircles div.circle.l.royalblue.android{
+    left:3%;
+    top:25px;
+}
+#backgroundcircles div.circle.xxs.linkedinblue.linkedin{
+    left:17%;
+    top:29px;
+}
+
+#backgroundcircles div.circle.l.facebookbluecircle.facebook{
+    right:7.5%;
+    top:75px;
+}
+#backgroundcircles div.circle.m.purple.hifluence{
+    top:310px;
+    left:10%;
+    background-size:60%;
+}
+#backgroundcircles div.circle.l.aquamarijn.twitter{
+    top:443px;
+    left:6.5%;
+}
+#backgroundcircles div.circle.xs.linkedinblue2.linkedin{
+    top:553px;
+    left:46%;
+}
+#backgroundcircles div.circle.xxl.purple:not(.hifluence){
+    top:513px;
+    left:72.5%;
+}
+#backgroundcircles div.circle.xxxl.aquamarijn.twitter{
+    left:79.5%;
+    top:533px;
+    background-size:45%;
+    z-index:-20;
+}
+#backgroundcircles div.circle.xs.aquamarijn{
+    top:583px;
+    left:7%;
+}
+#backgroundcircles div.circle.s.yellow.star{
+    top:593px;
+    left:22%;
+}
+#backgroundcircles div.circle.s.greyblue.android{
+    top:623px;
+    left:55%;
+}
+#backgroundcircles div.circle.tussenxsens.twitterblue.twitter{
+    top:613px;
+    left:65%;
+}
+/* </editor-fold>*/
+/*<editor-fold defaultstate="collapsed" desc="CIRCLE ICONS">*/
+.hifluence{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/hifluencelogo.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.android{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/android.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.twitter{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/twitter.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.linkedin{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/linkedin.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.star{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/star.png");
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+.facebook{
+    background-image: url("/custompagecontrollers/loginregister/res/img/icons/fb.png");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+/* </editor-fold>*/
+/* </editor-fold>*/
+
+
+
+/* <editor-fold defaultstate="collapsed" desc="COLORS">*/
+.yellow{
+    background-color:#ffa500;
+}
+.royalblue{
+    background-color: #7aa1c2;
+}
+.facebookbluecircle{
+    background-color: #004e8f;
+}
+.facebookbluelight{
+    background-color: #3c5a98;
+}
+.facebookbluedark{
+    background-color: #324e89;
+}
+.aquamarijn{
+    background-color: #4fb6e2;
+}
+.linkedinblue{
+    background-color: #00a0bc;
+}
+.linkedinblue2{
+    background-color: #18a8c2;
+
+}
+.twitterblue{
+    background-color:#008bcf;
+}
+.purple{
+    background-color: #695375;
+}
+.greyblue{
+    background-color: #c6d6e3;
+}
+.greyorsign{
+    background-color: #eaeaea;
+}
+/* </editor-fold>*/
+#userprofile,ul#tablinks{
+    display:none;
+}
+/* </editor-fold>*/
+
+/*
+@media screen and (min-width:980px){
+    *{
+        outline:red solid 1px;
+    }
+    #content{
+        width:700px;
+    }
+    #backgroundcircles{
+        width:940px;
+    }
+
+     loginform<editor-fold defaultstate="collapsed" desc="comment">
+
+    #loginformcontainer input{
+        width:260px;
+        height:40px;
+    }
+     div#content>h1{
+        font-size:172.5%;
+        padding:35px 20px ;
+        width:94.4%;
+        letter-spacing: 1px;
+        background-size:30px;
+        background-position:6% 51%;
+    }
+    #separator{
+        float:left;
+        width:2px;
+        display:inline-block;
+        height:100%;
+        margin:20px 20px;
+        height:345px;
+        Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,dcdcdc+50,dcdcdc+51,f5f5f5+100 
+        background: #f5f5f5;  Old browsers 
+        background: -moz-linear-gradient(top, #f5f5f5 0%, #dcdcdc 50%, #dcdcdc 51%, #f5f5f5 100%);  FF3.6-15 
+        background: -webkit-linear-gradient(top, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  Chrome10-25,Safari5.1-6 
+        background: linear-gradient(to bottom, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=0 );  IE6-9 
+    }
+
+    #loginformcontainer,#registerformcontainer{
+        width:44%;
+        display:inline-block;
+        float:left;
+        position:relative;
+    }
+    #loginformcontainer{
+        margin-left:3%;
+        margin-top:15px;
+    }
+    #loginformcontainer input{
+        width:260px;
+        height:40px;
+        margin-bottom:30px;
+        padding-left:45px;
+
+    }
+    #registerformcontainer{
+        margin-right:3%;
+    }
+    <editor-fold defaultstate="collapsed" desc="formstyling">
+
+
+
+    <editor-fold defaultstate="collapsed" desc="loginform">
+
+    <editor-fold defaultstate="collapsed" desc="CHECKBOX">
+    #loginformcontainer #fakecheckbox{
+        width:15px;
+        height:15px;
+        margin-top:20px;
+    }
+    #loginformcontainer #fakecheckbox+label{
+        font-size:70%;
+        margin-left:10px;
+        margin-top:20px;
+    }
+    </editor-fold>
+    #loginformcontainer button{
+        border:none;
+        border-radius:8px ;
+        color:white;
+        margin-top: 18px;
+    }
+    #loginformcontainer button#fblogin{
+        margin-top:20px;
+        width:250px;   
+        height:40px;
+        overflow:hidden;
+    }
+    #loginformcontainer button#fblogin .fblogo{
+        padding-top:5px;
+        width:18%;
+        height:100%;;;
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;
+        display:inline-block;
+        position:relative;
+        left:-14%;
+    }
+    #loginformcontainer button#fblogin .imgholder{
+    }
+    #loginformcontainer button#fblogin .imgholder>img{
+        height:25%;
+        width:25%;
+        margin-top:6%;
+    }
+    #loginformcontainer button#fblogin .fblogintext{
+        display: inline-block;
+        font-weight:normal;
+        position:relative;
+        height:26%;
+        top:-15%;
+    }
+    #loginformcontainer button#fblogin .fblogintext em{
+        font-weight:bolder;
+        font-style: normal;
+        font-size:110%;
+    }
+
+    #loginseparator{
+        height:2px;
+        width:98%;
+        margin: 40px auto 40px auto;
+        text-align:center;
+        background: #f5f5f5;  Old browsers 
+        background: -moz-linear-gradient(left,  #f5f5f5 0%, #dcdcdc 25%, #dcdcdc 75%, #f5f5f5 100%);  FF3.6+ 
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f5f5), color-stop(25%,#dcdcdc), color-stop(75%,#dcdcdc), color-stop(100%,#f5f5f5));  Chrome,Safari4+ 
+        background: -webkit-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  Chrome10+,Safari5.1+ 
+        background: -o-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  Opera 11.10+ 
+        background: -ms-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  IE10+ 
+        background: linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  W3C 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 );  IE6-9 
+    }
+    .greyorsign{
+        position:relative;
+        top:-15.5px;
+        margin:auto;
+        z-index:0;
+        color:#bbbbbb;
+        width:32px;
+        height:32px;
+        line-height:31px;
+    }
+     </editor-fold>
+    
+    
+    
+    
+   /*<editor-fold defaultstate="collapsed" desc="registerform">
+    #registerformcontainer {
+        margin-top:15px;
+    }
+    #registerformcontainer h4{
+        color:#676767;
+        font-weight:normal;
+    }
+    #registerformcontainer input[type=file]{
+        border:none;
+        float:right;
+        width:100%;
+        width:76px;
+        height:76px;
+        margin-top:-23px;
+        margin-right:-76px;
+        z-index:50;
+        position:relative;
+        opacity:0;
+    }
+    #registerformcontainer label{
+        font-size:75%;
+        display:block;
+        margin-bottom:10px;
+        color:#676767;
+        clear:both;
+
+    }
+    #registerformcontainer form label:first-child{
+        margin-top:-18px;
+        margin-left:150px;
+    }
+    #registerformcontainer input[type=text],#registerformcontainer input[type=email],#registerformcontainer input[type=password]{
+        margin-bottom:5px;
+        width:304px;
+        height:35px;
+
+    }
+    #registerformcontainer button{
+        margin-top:17px;
+        border:none;
+        border-radius:5px ;
+        color:white;
+        background-color:orange;
+        float:right;
+        font-weight:bold;
+        width:100px;
+        height:35px;
+    }
+    #registerformcontainer #uploadbutton{
+        float:right;
+        width:75px;
+        height:75px;
+        margin-top:-23px;
+        margin-bottom:-5%;
+        border:1px solid #dcdcdc; 
+        border-radius: 6px;
+        background: white;
+        text-align: center;
+        position:relative;
+    }
+    #registerformcontainer #uploadbutton .imgholder{
+        width:33.3%;
+        height:40%;
+        margin-left:33.3%;
+        padding-top:45%;
+    }
+    #registerformcontainer #uploadbutton:hover{
+        cursor:pointer;
+    }
+
+    </editor-fold>
+     </editor-fold>
+
+}*/
+
+@media screen and (min-width:980px){
+    #backgroundcircles{
+        width:940px;
+    }
+    div#content{
+        width:700px;
+    }
+    div#content>h1{
+        font-size:172.5%;
+        padding:35px 20px ;
+        width:94.4%;
+        letter-spacing: 1px;
+        background-size:30px;
+        background-position:6% 51%;
+    }
+    #separator{
+        float:left;
+        width:2px;
+        display:inline-block;
+        height:100%;
+        margin:20px 20px;
+        height:345px;
+        /*Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,dcdcdc+50,dcdcdc+51,f5f5f5+100*/ 
+        background: #f5f5f5;  /*Old browsers */
+        background: -moz-linear-gradient(top, #f5f5f5 0%, #dcdcdc 50%, #dcdcdc 51%, #f5f5f5 100%);  /*FF3.6-15 */
+        background: -webkit-linear-gradient(top, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+    }
+    /*<editor-fold defaultstate="collapsed" desc="loginform">*/
+
+
+
+    /*<editor-fold defaultstate="collapsed" desc="formstyling">*/
+    #loginformcontainer,#registerformcontainer{
+        width:44%;
+        display:inline-block;
+        float:left;
+        position:relative;
+    }
+
+    #registerformcontainer{
+        margin-right:3%;
+        margin-left:0;
+    }
+    /*<editor-fold defaultstate="collapsed" desc="loginform">*/
+    #loginformcontainer input{
+        width:86%;
+        margin-bottom:30px;
+        padding-left:13%;
+        height:40px;
+    }
+
+    #loginformcontainer{
+        margin-left:3%;
+        margin-top:15px;
+    }
+    /*<editor-fold defaultstate="collapsed" desc="CHECKBOX">*/
+    #loginformcontainer #fakecheckbox{
+        width:15px;
+        height:15px;
+        margin-top:20px;
+    }
+    #loginformcontainer #fakecheckbox+label{
+        font-size:70%;
+        margin-left:10px;
+        margin-top:20px;
+    }
+    /*</editor-fold>*/
+    div#loginformcontainer>form>button{
+        border:none;
+        border-radius:8px ;
+        color:white;
+        margin-top: 18px;
+    }
+    div#loginformcontainer>form>button#fblogin{
+        margin-top:20px;
+        width:250px;   
+        height:40px;
+        overflow:hidden;
+    }
+    div#loginformcontainer button#fblogin .fblogo{
+        padding-top:5px;
+        width:18%;
+        height:100%;
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;
+        display:inline-block;
+        position:relative;
+        left:-14%;
+    }
+    div#loginformcontainer button#fblogin .imgholder{
+    }
+    div#loginformcontainer button#fblogin .imgholder>img{
+        height:25%;
+        width:25%;
+        margin-top:6%;
+    }
+    div#loginformcontainer button#fblogin .fblogintext{
+        display: inline-block;
+        font-weight:normal;
+        position:relative;
+        height:26%;
+        top:-15%;
+    }
+    div#loginformcontainer button#fblogin .fblogintext em{
+        font-weight:bolder;
+        font-style: normal;
+        font-size:110%;
+    }
+
+    div#loginseparator{
+        height:2px;
+        width:98%;
+        margin: 40px auto 40px auto;
+        text-align:center;
+        background: #f5f5f5; /* Old browsers */
+        background: -moz-linear-gradient(left,  #f5f5f5 0%, #dcdcdc 25%, #dcdcdc 75%, #f5f5f5 100%);  /*FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f5f5), color-stop(25%,#dcdcdc), color-stop(75%,#dcdcdc), color-stop(100%,#f5f5f5));  /*Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*Chrome10+,Safari5.1+*/ 
+        background: -o-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*IE10+ */
+        background: linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);/*  W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 */
+    }
+    .greyorsign{
+        position:relative;
+        top:-15.5px;
+        margin:auto;
+        z-index:0;
+        color:#bbbbbb;
+        width:32px;
+        height:32px;
+        line-height:31px;
+    }
+    /*</editor-fold>*/
+
+
+
+
+    /*<editor-fold defaultstate="collapsed" desc="registerform">*/
+    #registerformcontainer {
+        margin-top:15px;
+    }
+    #registerformcontainer h4{
+        color:#676767;
+        font-weight:normal;
+    }
+    #registerformcontainer input[type=file]{
+        border:none;
+        float:right;
+        width:100%;
+        width:76px;
+        height:76px;
+        margin-top:-23px;
+        margin-right:-76px;
+        z-index:50;
+        position:relative;
+        opacity:0;
+    }
+    #registerformcontainer label{
+        font-size:75%;
+        display:block;
+        margin-bottom:10px;
+        color:#676767;
+        clear:both;
+
+    }
+    #registerformcontainer form label:first-child{
+        margin-top:-18px;
+        margin-left:150px;
+    }
+    #registerformcontainer input[type=text],#registerformcontainer input[type=email],#registerformcontainer input[type=password]{
+        margin-bottom:5px;
+        width:304px;
+        height:35px;
+
+    }
+    #registerformcontainer button{
+        margin-top:17px;
+        border:none;
+        border-radius:5px ;
+        color:white;
+        background-color:orange;
+        float:right;
+        font-weight:bold;
+        width:100px;
+        height:35px;
+    }
+    #registerformcontainer #uploadbutton{
+        float:right;
+        width:75px;
+        height:75px;
+        margin-top:-23px;
+        margin-bottom:-5%;
+        border:1px solid #dcdcdc; 
+        border-radius: 6px;
+        background: white;
+        text-align: center;
+        position:relative;
+    }
+    #registerformcontainer #uploadbutton .imgholder{
+        width:33.3%;
+        height:40%;
+        margin-left:33.3%;
+        padding-top:45%;
+    }
+    #registerformcontainer #uploadbutton:hover{
+        cursor:pointer;
+    }
+
+    /*    </editor-fold>*/
+    /*</editor-fold>*/
+
+}
+@media screen and (max-width:480px){
+}
+@media screen and (min-width:768px){
+    #backgroundcircles{
+        width:760px;
+    }
+    #content{
+        margin:140px auto;
+        width:580px;
+    }
+    div#content>h1{
+        font-size:172.5%;
+        padding:35px 20px ;
+        width:93.3%;
+        letter-spacing: 1px;
+        background-size:30px;
+        background-position:6% 51%;
+    }
+    #separator{
+        width:2px;
+        display:inline-block;
+        margin-left: 5%;
+        margin-left:5%;
+        height:100%;
+        height:345px;
+        /*Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,dcdcdc+50,dcdcdc+51,f5f5f5+100*/ 
+        background: #f5f5f5;  /*Old browsers */
+        background: -moz-linear-gradient(top, #f5f5f5 0%, #dcdcdc 50%, #dcdcdc 51%, #f5f5f5 100%);  /*FF3.6-15 */
+        background: -webkit-linear-gradient(top, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+    }
+
+
+    /*<editor-fold defaultstate="collapsed" desc="formstyling">*/
+
+
+
+    /*<editor-fold defaultstate="collapsed" desc="loginform">*/
+
+    #loginformcontainer>form>input{
+        width:86%;
+        margin-bottom:30px;
+        padding-left:12.8%;
+        height:40px;
+    }
+    #loginformcontainer,#registerformcontainer{
+        width:41%;
+        display:inline-block;
+    }
+    #loginformcontainer{
+        margin-left:4%;
+        margin-top:15px;
+    }
+
+
+    /*<editor-fold defaultstate="collapsed" desc="CHECKBOX">*/
+    #loginformcontainer #fakecheckbox{
+        width:15px;
+        height:15px;
+        margin-top:20px;
+    }
+    #loginformcontainer #fakecheckbox+label{
+        font-size:70%;
+        margin-left:10px;
+        margin-top:20px;
+    }
+    /*</editor-fold>*/
+
+
+    #loginseparator{
+        height:2px;
+        width:98%;
+        margin: 40px auto 40px auto;
+        text-align:center;
+        background: #f5f5f5;  /*Old browsers */
+        background: -moz-linear-gradient(left,  #f5f5f5 0%, #dcdcdc 25%, #dcdcdc 75%, #f5f5f5 100%);  /*FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f5f5), color-stop(25%,#dcdcdc), color-stop(75%,#dcdcdc), color-stop(100%,#f5f5f5));  /*Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*IE10+ */
+        background: linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 );  /*IE6-9 */
+    }
+    .greyorsign{
+        position:relative;
+        top:-15.5px;
+        margin:auto;
+        z-index:0;
+        color:#bbbbbb;
+        width:32px;
+        height:32px;
+        line-height:31px;
+    }
+    /* </editor-fold>*/
+
+    /*<editor-fold defaultstate="collapsed" desc="registerform">*/
+    #registerformcontainer {
+        margin-top:15px;
+        margin-left:0;
+    }
+    #registerformcontainer h4{
+        color:#676767;
+        font-weight:normal;
+    }
+    #registerformcontainer input[type=file]{
+        border:none;
+        float:right;
+        width:100%;
+        width:76px;
+        height:76px;
+        margin-top:-23px;
+        margin-right:-76px;
+        z-index:50;
+        position:relative;
+        opacity:0;
+    }
+    #registerformcontainer label{
+        font-size:75%;
+        display:block;
+        margin-bottom:10px;
+        color:#676767;
+        clear:both;
+
+    }
+    #registerformcontainer form label:first-child{
+        margin-top:-18px;
+        margin-left:150px;
+    }
+    #registerformcontainer input[type=text],#registerformcontainer input[type=email],#registerformcontainer input[type=password]{
+        margin-bottom:5px;
+        width:100%;
+        height:35px;
+
+    }
+    #registerformcontainer button{
+        margin-top:17px;
+        border:none;
+        border-radius:5px ;
+        color:white;
+        background-color:orange;
+        float:right;
+        font-weight:bold;
+        width:100px;
+        height:35px;
+    }
+    #registerformcontainer #uploadbutton{
+        float:right;
+        width:75px;
+        height:75px;
+        margin-top:-23px;
+        margin-bottom:-5%;
+        border:1px solid #dcdcdc; 
+        border-radius: 6px;
+        background: white;
+        text-align: center;
+        position:relative;
+    }
+    #registerformcontainer #uploadbutton .imgholder{
+        width:33.3%;
+        height:40%;
+        margin-left:33.3%;
+        padding-top:45%;
+    }
+    #registerformcontainer #uploadbutton:hover{
+        cursor:pointer;
+    }
+
+    /*</editor-fold>*/
+}
+
+
+
+/*ALGEMEEN*/
+
+
+div#content>h1{
+    font-size:172.5%;
+    padding:5% 0;
+    width:100%;
+    letter-spacing: 1px;
+    background-size:30px;
+    background-position:6% 51%;
+}
+div#separator{
+    float:left;
+    /*width:0.5%;*/
+    width:1px;
+    display:inline-block;
+    height:100%;
+    margin:4.25%;
+    height:345px;
+    /*Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,dcdcdc+50,dcdcdc+51,f5f5f5+100*/ 
+    background: #f5f5f5;  /*Old browsers */
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #dcdcdc 50%, #dcdcdc 51%, #f5f5f5 100%);  /*FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f5f5f5 0%,#dcdcdc 50%,#dcdcdc 51%,#f5f5f5 100%);  /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*<editor-fold defaultstate="collapsed" desc="formstyling">*/
+div#loginformcontainer,div#registerformcontainer{
+    width:41%;
+    display:inline-block;
+    float:left;
+    position:relative;
+}
+div#loginformcontainer{
+    margin-left:4.5%;
+}
+div#registerformcontainer{
+    margin-right:4.5%;
+    margin-left:0;
+}
+/*<editor-fold defaultstate="collapsed" desc="loginform">*/
+div#loginformcontainer>form>input{
+    width:86%;
+    margin-bottom:30px;
+    padding-left:13%;
+    height:40px;
+}
+
+/*<editor-fold defaultstate="collapsed" desc="CHECKBOX">*/
+#loginformcontainer #fakecheckbox{
+    width:15px;
+    height:15px;
+    margin-top:20px;
+}
+#loginformcontainer #fakecheckbox+label{
+    font-size:65%;
+    margin-left:5px;
+    margin-top:20px;
+}
+/*</editor-fold>*/
+div#loginformcontainer>form>button{
+    border:none;
+    border-radius:8px ;
+    color:white;
+    margin-top: 18px;
+}
+div#loginformcontainer>button#fblogin{
+    margin-top:20px;
+    width:75%;; 
+    position:relative;
+    padding:0;
+}
+div#loginformcontainer button#fblogin>div.fblogo{
+    width:21%;
+    height:100%;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    display:inline-block;
+    margin-left:0;
+}
+div#loginformcontainer button#fblogin>div.fblogo>img{
+    height:20px;
+    width:10px;
+    position:relative;
+    top:6px;
+}
+div#loginformcontainer button#fblogin>div.fblogintext{
+    display: inline-block;
+    width:79%;
+    float:right;
+    font-weight:lighter;
+    height:40px;
+    line-height:32.5px;
+    color:white;
+    font-size:80%;
+}
+div#loginformcontainer button#fblogin>div.fblogintext em{
+    font-weight:bold;
+    font-style: normal;
+    font-size:120%;
+}
+div#loginseparator{
+    height:2px;
+    width:98%;
+    margin: 40px auto 40px auto;
+    text-align:center;
+    background: #f5f5f5; /* Old browsers */
+    background: -moz-linear-gradient(left,  #f5f5f5 0%, #dcdcdc 25%, #dcdcdc 75%, #f5f5f5 100%);  /*FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f5f5), color-stop(25%,#dcdcdc), color-stop(75%,#dcdcdc), color-stop(100%,#f5f5f5));  /*Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*Chrome10+,Safari5.1+*/ 
+    background: -o-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);  /*IE10+ */
+    background: linear-gradient(left,  #f5f5f5 0%,#dcdcdc 25%,#dcdcdc 75%,#f5f5f5 100%);/*  W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 ); /* IE6-9 */
+}
+div.greyorsign{
+    position:relative;
+    top:-15.5px;
+    margin:auto;
+    z-index:0;
+    color:#bbbbbb;
+    width:32px;
+    height:32px;
+    line-height:31px;
+}
+/*</editor-fold>*/
+/*<editor-fold defaultstate="collapsed" desc="registerform">*/
+div#registerformcontainer {
+    margin-top:15px;
+}
+#registerformcontainer h4{
+    color:#676767;
+    font-weight:normal;
+}
+#registerformcontainer input[type=file]{
+    border:none;
+    float:right;
+    width:100%;
+    width:76px;
+    height:76px;
+    margin-top:-23px;
+    margin-right:-76px;
+    z-index:50;
+    position:relative;
+    opacity:0;
+}
+#registerformcontainer label{
+    font-size:75%;
+    display:block;
+    margin-bottom:10px;
+    color:#676767;
+    clear:both;
+
+}
+#registerformcontainer form label:first-child{
+    margin-top:-18px;
+    margin-left:150px;
+}
+#registerformcontainer input[type=text],#registerformcontainer input[type=email],#registerformcontainer input[type=password]{
+    margin-bottom:5px;
+    padding-left:5%;
+    width:94%;
+    height:35px;
+
+}
+#registerformcontainer button{
+    margin-top:17px;
+    border:none;
+    border-radius:5px ;
+    color:white;
+    background-color:orange;
+    float:right;
+    font-weight:bold;
+    width:100px;
+    height:35px;
+}
+#registerformcontainer #uploadbutton{
+    float:right;
+    width:75px;
+    height:75px;
+    margin-top:-23px;
+    margin-bottom:-5%;
+    border:1px solid #dcdcdc; 
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+    position:relative;
+}
+#registerformcontainer #uploadbutton .imgholder{
+    width:33.3%;
+    height:40%;
+    margin-left:33.3%;
+    padding-top:45%;
+}
+#registerformcontainer #uploadbutton:hover{
+    cursor:pointer;
+}
+
+/*    </editor-fold>*/
+/*</editor-fold>*/
+/* <editor-fold defaultstate="collapsed" desc="media MAX width 320px;">*/
+@media (max-width: 320px){
+    html, body { height: 100%; width: 100%;}
+    /*STRUCTURAL*/
+    .container{
+        width:95%;
+        margin:2.5%;
+    }
+    #content{
+        width:100%;
+        margin:5% auto;
+    }
+    #content h1 {
+        font-size:80%;
+        background-size:5%;
+        background-position-y: 50% ;
+        background-position-x: 2.4%;
+        padding:2%;
+        /*margin-top:-50%;*/
+    }
+
+
+    /* <editor-fold defaultstate="collapsed" desc="CIRCLES">*/
+    #backgroundcircles{
+        position:absolute;
+        z-index:-10;
+        top:-10%;
+        min-height:1px;
+        outline:1px solid red;
+        padding-bottom:20%;
+    }
+    /*<editor-fold defaultstate="collapsed" desc="CIRCLE ICONS">*/
+    .hifluence{
+        background-image: url("/custompagecontrollers/loginregister/res/img/icons/hifluencelogo.png");
+        background-position:center;
+        /*background-size:30%;*/
+        background-repeat: no-repeat;
+    }
+    .android{
+        background-image: url("/custompagecontrollers/loginregister/res/img/icons/android.png");
+        background-position:center;
+        /*background-size:30%;*/
+        background-repeat: no-repeat;
+    }
+    .twitter{
+        background-image: url("/custompagecontrollers/loginregister/res/img/icons/twitter.png");
+        background-position:center;
+        /*background-size:30%;*/
+        background-repeat: no-repeat;
+    }
+    .linkedin{
+        background-image: url("/custompagecontrollers/loginregister/res/img/icons/linkedin.png");
+        background-position:center;
+        /*background-size:30%;*/
+        background-repeat: no-repeat;
+    }
+    .star{
+        background-image: url("/custompagecontrollers/loginregister/res/img/icons/star.png");
+        background-position:center;
+        /*background-size:30%;*/
+        background-repeat: no-repeat;
+
+    }
+    .facebook{
+        background-image: url("/custompagecontrollers/loginregister/res/img/icons/fb.png");
+        background-position:center;
+        /*background-size:30%;*/
+        background-repeat: no-repeat;
+    }
+    /*    </editor-fold>*/
+    /*  <editor-fold defaultstate="collapsed" desc="CIRCLE POSITIONING">*/
+    #backgroundcircles div.circle.xxl.purple.hifluence{
+        background-size:60%;
+        left:37.5%;
+        top:12.5%;
+    }
+    *{
+        /*visibility:hidden;*/
+    }
+    #backgroundcircles div.circle.xxxs.yellow.star{
+        visibility:visible;
+        left:95%;
+        top:12.5%;
+        outline:1px solid blue;
+        background-size:30%;
+    }
+
+    #backgroundcircles div.circle.l.royalblue.android{
+        left:-57.5%;
+        top:-20%;
+    }
+    #backgroundcircles div.circle.xxs.linkedinblue.linkedin{
+        position:relative;
+        left:-50%;
+        top:-32.5%;
+        background-size: 35%;
+    }
+    #backgroundcircles div.circle.l.facebookbluecircle.facebook{
+        visibility:visible;
+        position:relative;
+        background-size:13%;
+        top:-20%;
+        left:8%;
+    }
+    #backgroundcircles div.circle.m.purple.hifluence{
+        position:relative;
+    }
+    #backgroundcircles div.circle.l.aquamarijn.twitter{
+        position:relative;
+    }
+    #backgroundcircles div.circle.xs.linkedinblue2.linkedin{
+        position:relative;
+    }
+    #backgroundcircles div.circle.xxl.purple{
+        position:relative;
+    }
+    #backgroundcircles div.circle.xxxl.aquamarijn.twitter{
+        position:relative;
+        z-index: -15
+    }
+    #backgroundcircles div.circle.xs.aquamarijn{
+        position:relative;
+    }
+    #backgroundcircles div.circle.s.yellow.star{
+        position:relative;
+    }
+    #backgroundcircles div.circle.s.greyblue.android{
+        position:relative;
+    }
+    #backgroundcircles div.circle.s.twitterblue.twitter{
+        position:relative;
+    }
+    /*</editor-fold>*/
+    /* </editor-fold>*/
+    *{
+        outline:red solid 1px;
+    }
+}
+/* </editor-fold>*/

@@ -1,0 +1,1 @@
+<button <?php if (isset($input->id)) { ?> id="<?php echo $input->id ?>" <?php } ?> name="<?php echo $name; ?>"> <?php echo $input->value; ?></button>
