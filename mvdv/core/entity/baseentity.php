@@ -43,7 +43,7 @@ class BaseEntity {
      * static function that ensures objects only get instantiated once
      * @param array $result
      * @return object of called_class()
-      s */
+     */
     public static function create($result) {
         $calledclass=  get_called_class();
         $class=  self::getClassName($calledclass);
